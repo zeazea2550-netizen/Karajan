@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เค้ารักอ้วนน้า ❤️</title>
+<style>
+body{
+margin:0;
+font-family:sans-serif;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+color:white;
+text-align:center;
+}
+.box{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+button{
+margin-top:25px;
+padding:15px 30px;
+border:none;
+border-radius:30px;
+font-size:18px;
+background:white;
+color:#ff6f91;
+}
+.heart{
+font-size:60px;
+animation:beat 1s infinite;
+}
+@keyframes beat{
+0%,100%{transform:scale(1)}
+50%{transform:scale(1.2)}
+}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>ถึงคนแอ่นแอ๊นของเค้า ❤️</h1>
+<p>
+ตั้งแต่วันที่อ้วนเข้ามา  
+ทุกวันของเค้ามีความสุขมากๆ  
+ขอบคุณที่อยู่ข้าง ๆ เค้าเสมอ
+</p>
+<button onclick="show()">กดตรงนี้หน่อย 💕</button>
+<div id="love" style="display:none">
+<div class="heart">❤️</div>
+<h2>เค้ารักอ้วนมากๆนะ</h2>
+<p>อยู่ด้วยกันไปนาน ๆ น้าาา อย่ารีบไปหนายยย</p>
+</div>
+</div>
+<script>
+function show(){
+document.getElementById("love").style.display="block";
+}
+</script>
+</body>
+</html>
