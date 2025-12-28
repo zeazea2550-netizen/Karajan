@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ถึงอ้วนของเค้า ❤️</title>
+<style>
+body{
+margin:0;
+font-family:sans-serif;
+background:linear-gradient(135deg,#ffb6c1,#ffd1dc);
+color:white;
+text-align:center;
+}
+.box{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+h1{
+font-size:2.4em;
+}
+p{
+font-size:1.2em;
+line-height:1.6;
+max-width:500px;
+}
+button{
+margin-top:25px;
+padding:15px 30px;
+border:none;
+border-radius:30px;
+font-size:18px;
+background:white;
+color:#ff6f91;
+cursor:pointer;
+}
+button:hover{
+transform:scale(1.05);
+}
+.heart{
+font-size:60px;
+margin-top:15px;
+animation:beat 1s infinite;
+}
+@keyframes beat{
+0%,100%{transform:scale(1)}
+50%{transform:scale(1.2)}
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h1>ถึงแอนนี่ของเค้า ❤️</h1>
+
+<p>
+ตั้งแต่วันที่มีอ้วน  
+ทุกวันของเค้าก็น่ารักขึ้นมาก ๆ  
+ขอบคุณที่อยู่ข้าง ๆ กัน  
+และทำให้เค้ายิ้มได้ทุกวันนะ อย่าคิดมากเลยน้า  
+</p>
+
+<button onclick="showLove()">กดตรงนี้หน่อย 💕</button>
+
+<div id="love" style="display:none;">
+<div class="heart">❤️</div>
+<h2>เค้ารักอ้วนมากนะ</h2>
+<p>
+อยากอยู่กับอ้วนไปนาน ๆ  
+ดูแลกันแบบนี้ตลอดไป 💖
+</p>
+<p>– จากเมลๆของอ้วน 😊</p>
+</div>
+</div>
+
+<script>
+function showLove(){
+document.getElementById("love").style.display="block";
+}
+</script>
+
+</body>
+</html>
